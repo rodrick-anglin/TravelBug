@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>TravelBug - Around The World</title>
-  <meta name="description" content="Automatically track your flights, countries, and travel stats. Visualize your travel life with TravelBug." />
+  <meta name="description" content="Automatically track and visualize your travel. Flights, countries, miles, and insights — all in one place." />
   <link rel="icon" href="AppIcon.png" />
 
-  <!-- Open Graph -->
+  <!-- ✅ Google Verification (ADD THIS) -->
+  <meta name="google-site-verification" content="JLPgd8zDXREe_4e8z3wv347Bi_YDS8XV3t7g1n5NsjM" />
+
+  <!-- Social Metadata -->
   <meta property="og:title" content="TravelBug - Around The World" />
-  <meta property="og:description" content="Automatically track and visualize your travel life." />
+  <meta property="og:description" content="Automatically track and visualize your travel." />
   <meta property="og:image" content="https://gettravelbug.com/AppIcon.png" />
-  <meta property="og:url" content="https://gettravelbug.com" />
+  <meta property="og:url" content="https://gettravelbug.com/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TravelBug - Around The World" />
+  <meta name="twitter:description" content="Automatically track and visualize your travel." />
+  <meta name="twitter:image" content="https://gettravelbug.com/AppIcon.png" />
 
   <style>
     body {
@@ -23,95 +29,83 @@
       background: #0b1f3a;
       color: white;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 40px 20px;
+      padding: 24px 16px;
+      box-sizing: border-box;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
+    .container { max-width: 600px; }
 
     img {
       width: 110px;
       height: 110px;
       border-radius: 22px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     h1 {
+      margin: 0;
       font-size: 34px;
-      margin-bottom: 10px;
+      font-weight: 700;
     }
 
-    .subtitle {
+    .tagline {
       font-size: 18px;
-      opacity: 0.9;
-      margin-bottom: 20px;
+      opacity: 0.85;
+      margin-top: 8px;
     }
 
     .description {
+      margin-top: 20px;
       font-size: 16px;
-      opacity: 0.85;
       line-height: 1.6;
-      margin-bottom: 30px;
+      opacity: 0.85;
     }
 
-    /* FEATURE GRID */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      margin: 30px 0;
+    ul {
+      list-style-position: inside;
+      padding: 0;
+      margin-top: 20px;
+      display: inline-block;
+      text-align: left;
     }
 
-    .feature-card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      padding: 18px;
-      font-size: 15px;
-      line-height: 1.5;
-      opacity: 0.95;
-      transition: transform 0.2s ease, background 0.2s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-4px);
-      background: rgba(255, 255, 255, 0.08);
+    li {
+      margin: 8px 0;
     }
 
     .btn {
       display: inline-block;
       margin-top: 24px;
-      padding: 14px 24px;
+      padding: 14px 22px;
       border-radius: 14px;
-      background: #2563eb;
+      background: #3b82f6;
       color: white;
       text-decoration: none;
       font-weight: 600;
       font-size: 16px;
     }
 
-    .privacy {
-      margin-top: 28px;
+    .footer {
+      margin-top: 30px;
       font-size: 13px;
-      opacity: 0.7;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      opacity: 0.6;
     }
 
     .links {
-      margin-top: 26px;
+      margin-top: 16px;
       display: flex;
       justify-content: center;
       gap: 16px;
-      flex-wrap: wrap;
       font-size: 14px;
     }
 
     .links a {
-      color: rgba(255,255,255,0.9);
+      color: rgba(255,255,255,0.85);
       text-decoration: underline;
     }
   </style>
@@ -119,37 +113,32 @@
 
 <body>
   <div class="container">
-
     <img src="AppIcon.png" alt="TravelBug App Icon" />
 
     <h1>TravelBug</h1>
-
-    <div class="subtitle">
-      Your travel. Automatically tracked and visualized.
-    </div>
+    <div class="tagline">Your travel. Automatically tracked and visualized.</div>
 
     <div class="description">
       TravelBug turns your flights, trips, and locations into a personal travel dashboard.
-      Track your travel history, visualize your journey on a world map, and unlock insights like miles flown, countries visited, and travel patterns.
+      Track your history, visualize your journey, and unlock insights like miles flown,
+      countries visited, and travel patterns.
     </div>
 
-    <!-- FEATURE GRID -->
-    <div class="features-grid">
-      <div class="feature-card">Track countries, cities, and trips</div>
-      <div class="feature-card">Import flights from your calendar</div>
-      <div class="feature-card">View travel stats and insights</div>
-      <div class="feature-card">Visualize routes on an interactive map</div>
-      <div class="feature-card">Add notes and memories to trips</div>
-      <div class="feature-card">Share with friends</div>
-    </div>
+    <ul>
+      <li>Import flights from your calendar</li>
+      <li>Track countries, cities, and trips</li>
+      <li>View travel stats and insights</li>
+      <li>Visualize routes on a world map</li>
+      <li>Add notes and memories</li>
+       <li>Share with friend!</li></li>
+    </ul>
 
     <a class="btn" href="https://apps.apple.com/app/id6760630281">
       View on the App Store
     </a>
 
-    <div class="privacy">
-      TravelBug reads calendar data only with your permission to identify travel-related events.
-      All data remains on your device and is never sold or shared.
+    <div class="footer">
+      TravelBug reads calendar data only with your permission. All data stays on your device.
     </div>
 
     <div class="links">
@@ -157,7 +146,6 @@
       <a href="terms.html">Terms</a>
       <a href="support.html">Support</a>
     </div>
-
   </div>
 </body>
 </html>
