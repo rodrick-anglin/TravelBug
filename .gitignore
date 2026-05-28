@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.dSYM.tar
+*.xcarchive
+
+# SwiftPM
+.build/
+Package.resolved
+
+# Secrets (real file must never be committed)
+Secrets.xcconfig
